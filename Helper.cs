@@ -76,7 +76,7 @@ namespace TomlToEpcQrCode
 
             foreach (KeyValuePair<string, QRCode> qrCode in qrCodes)
             {
-                Bitmap qrCodeImage = qrCode.Value.GetGraphic(20);
+                Bitmap qrCodeImage = qrCode.Value.GetGraphic(3);
                 string fileName = qrCode.Key + ".jpeg";
                 string filePath = folderPath + "\\" + fileName;
                 qrCodeImage.Save(filePath, ImageFormat.Jpeg);
